@@ -233,6 +233,7 @@
   img {
   max-width: 100%;
   height: auto;
+  display: block;
 }
 body {
   overflow-x: hidden;
@@ -491,11 +492,11 @@ a, button {
   .reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.6s ease, transform 0.6s ease; }
   .reveal.visible { opacity: 1; transform: translateY(0); }
 
-  /* RESPONSIVE */
-  /* ================= RESPONSIVE DESIGN ================= */
+/* ================= RESPONSIVE DESIGN ================= */
 
 /* Tablet (<= 1024px) */
 @media (max-width: 1024px) {
+
   #hero {
     grid-template-columns: 1fr;
     text-align: center;
@@ -506,8 +507,15 @@ a, button {
     margin: 0 auto 2rem;
   }
 
+  /* SHOW photo instead of hiding */
   .photo-card {
-    display: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5rem;
+  }
+
+  .photo-frame {
+    max-width: 260px;
   }
 
   .about-grid,
@@ -525,7 +533,7 @@ a, button {
 @media (max-width: 768px) {
 
   body {
-    cursor: auto; /* Disable custom cursor */
+    cursor: auto;
   }
 
   .cursor,
@@ -536,19 +544,12 @@ a, button {
   nav {
     padding: 1rem;
   }
-.menu-toggle {
-  display: none;
-  font-size: 1.5rem;
-  color: var(--accent);
-  cursor: pointer;
-}
 
-@media (max-width: 768px) {
   .menu-toggle {
     display: block;
   }
-}
-  /* Simple mobile nav */
+
+  /* Mobile nav */
   .nav-links {
     position: absolute;
     top: 70px;
@@ -566,10 +567,33 @@ a, button {
     display: flex;
   }
 
-  /* HERO */
+  /* HERO FIX */
   #hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 5rem 1rem 3rem;
+    text-align: center;
   }
+
+  /* Move photo to TOP */
+  .photo-card {
+    order: -1;
+    margin-bottom: 1.5rem;
+  }
+
+
+  .photo-frame::before {
+    clip-path: none;
+    border-radius: 12px;
+  }
+
+  .photo-inner {
+    clip-path: none;
+    border-radius: 12px;
+  }
+
+
 
   h1.hero-name {
     font-size: 2.5rem;
@@ -593,7 +617,6 @@ a, button {
     padding: 0.6rem 1.2rem;
   }
 
-  /* Sections */
   section {
     padding: 3rem 1rem;
   }
@@ -604,22 +627,18 @@ a, button {
     gap: 0.5rem;
   }
 
-  /* Projects */
   .projects-grid {
     grid-template-columns: 1fr;
   }
 
-  /* Stats */
   .stats-grid {
     grid-template-columns: 1fr;
   }
 
-  /* Skills */
   .skill-tags {
     justify-content: center;
   }
 
-  /* Footer */
   footer {
     flex-direction: column;
     text-align: center;
@@ -629,6 +648,10 @@ a, button {
 
 /* Small Mobile (<= 480px) */
 @media (max-width: 480px) {
+
+  .photo-frame {
+    max-width: 180px;
+  }
 
   h1.hero-name {
     font-size: 2rem;
@@ -647,22 +670,10 @@ a, button {
   }
 }
 
-  /* Glitch effect on hover of name */
-  .glitch { position: relative; }
-  .glitch:hover::after {
-    content: attr(data-text);
-    position: absolute; top: 0; left: 3px;
-    color: var(--accent2);
-    clip-path: polygon(0 30%, 100% 30%, 100% 50%, 0 50%);
-    animation: glitch-clip 0.2s steps(1) infinite;
-  }
-  @keyframes glitch-clip {
-    0% { clip-path: polygon(0 0, 100% 0, 100% 20%, 0 20%); transform: translate(-2px); }
-    25% { clip-path: polygon(0 40%, 100% 40%, 100% 60%, 0 60%); transform: translate(2px); }
-    50% { clip-path: polygon(0 70%, 100% 70%, 100% 90%, 0 90%); transform: translate(-1px); }
-    75% { clip-path: polygon(0 10%, 100% 10%, 100% 30%, 0 30%); transform: translate(1px); }
-    100% { clip-path: polygon(0 55%, 100% 55%, 100% 75%, 0 75%); transform: translate(0); }
-  }
+.photo-frame:hover {
+  transform: scale(1.03);
+  transition: transform 0.3s ease;
+}
 </style>
 </head>
 <body>
@@ -672,6 +683,7 @@ a, button {
 
 <!-- NAV -->
 <nav>
+  
   <div class="nav-logo">&lt; adithya.dev /&gt;</div>
   <div class="menu-toggle" onclick="toggleMenu()">☰</div>
   <ul class="nav-links">
@@ -708,7 +720,7 @@ a, button {
   <div class="photo-card reveal" style="transition-delay: 0.2s;">
     <div class="photo-frame">
       <div class="photo-inner">
-        <img src="final_pic.jpeg" alt="Adithya"> 
+        <img src="final_pic.jpeg" alt="Adithya" loading="lazy"> 
         <!-- <div class="photo-placeholder">
            <div class="photo-placeholder-icon">👤</div> -->
           <!-- <img src="../final_pic.jpeg" alt="Adithya">  -->
