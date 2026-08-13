@@ -417,6 +417,7 @@ img{max-width:100%;display:block;}
     width: 180px;
     height: 180px;
     border-radius: 18px;
+    background: var(--cyan);
   }
 
   /* Eyebrow / Portfolio */
@@ -424,7 +425,7 @@ img{max-width:100%;display:block;}
     font-size: 10px;
     letter-spacing: .12em;
     justify-content: center;
-    margin-bottom: 16px;
+    margin-bottom: 13px;
   }
 
   .eyebrow::before {
@@ -485,7 +486,7 @@ img{max-width:100%;display:block;}
 
   /* Scroll indicator */
   .scroll-cue {
-    bottom: 18px;
+    bottom: 10px;
     font-size: 9px;
   }
 
