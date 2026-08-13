@@ -432,15 +432,16 @@ img{max-width:100%;display:block;}
 
   /* Eyebrow / Portfolio */
   .eyebrow {
-    font-size: 10px;
+    /* font-size: 10px;
     letter-spacing: .12em;
     justify-content: center;
-    margin-bottom: 13px;
+    margin-bottom: 13px; */
+    display: none;
   }
 
-  .eyebrow::before {
+  /* .eyebrow::before {
     width: 18px;
-  }
+  } */
 
   /* Name */
   .hero h1 {
