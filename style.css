@@ -396,7 +396,7 @@ img{max-width:100%;display:block;}
   .portrait-ring {
     width: 180px;
     height: 180px;
-    background: var(--cyan);
+    /* background: var(--cyan); */
   }
 
   /* .portrait-ring::before,
@@ -426,8 +426,8 @@ img{max-width:100%;display:block;}
   .img-frame.hero-frame {
     width: 180px;
     height: 180px;
-    border-radius: 18px;
-    background: var(--cyan);
+    border-radius: 24px;
+    
   }
 
   /* Eyebrow / Portfolio */
