@@ -396,17 +396,20 @@ img{max-width:100%;display:block;}
   .portrait-ring {
     width: 180px;
     height: 180px;
+    background: var(--cyan);
   }
 
   .portrait-ring::before,
   .portrait-ring::after {
     inset: -9px;
     border-radius: 24px;
+    background: var(--cyan);
   }
 
   .portrait-ring::after {
     filter: blur(18px);
     opacity: .4;
+    background: var(--cyan);
   }
 
   .img-frame,
