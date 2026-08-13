@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Adithya Arumugam</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="bg-grid"></div>
+
+
+<!-- NAV -->
+<nav class="nav">
+  <div class="logo"><span class="dot"></span>Adithya<span style="color:var(--text-dim);font-weight:400;">.dev</span></div>
+  <div class="nav-links" id="navLinks">
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#freelance">Freelance</a>
+    <a href="#leadership">Leadership</a>
+    <a href="#contact">Contact</a>
+  </div>
+  <button class="nav-toggle" id="navToggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+</nav>
+
+<!-- PIPELINE RAIL -->
+<div class="rail">
+  <div class="rail-line"></div>
+  <div class="rail-fill" id="railFill"></div>
+  <div class="rail-stages" id="railStages">
+    <div class="rail-stage" data-target="hero"><div class="node"></div><div class="label">Discover</div></div>
+    <div class="rail-stage" data-target="about"><div class="node"></div><div class="label">Explore</div></div>
+    <div class="rail-stage" data-target="skills"><div class="node"></div><div class="label">Build</div></div>
+    <div class="rail-stage" data-target="projects"><div class="node"></div><div class="label">Create</div></div>
+    <div class="rail-stage" data-target="freelance"><div class="node"></div><div class="label">Deliver</div></div>
+    <div class="rail-stage" data-target="leadership"><div class="node"></div><div class="label">Lead</div></div>
+    <div class="rail-stage" data-target="contact"><div class="node"></div><div class="label">Connect</div></div>
+  </div>
+</div>
+
+<!-- HERO -->
+<section class="hero" id="hero">
+   <canvas id="netCanvas"></canvas>
+  <canvas id="netCanvas"></canvas>
+  <canvas id="netCanvas"></canvas> 
+   <canvas id="netCanvas"></canvas>
+  <canvas id="netCanvas"></canvas>
+  <canvas id="netCanvas"></canvas> 
+   <canvas id="netCanvas"></canvas>
+  <canvas id="netCanvas"></canvas>
+  <canvas id="netCanvas"></canvas> 
+
+  <div class="hero-inner">
+    <div>
+      <div class="eyebrow">Portfolio </div>
+      <h1>Adithya Arumugam<br><span class="grad">Creating Beyond the Code.</span></h1>
+      <p class="lead">Computer Science graduate from CEG, Anna University, passionate about turning ideas into impactful solutions.</p>
+      <div class="role-strip">
+        <span class="pulse"></span>
+        <span>Incoming <b>Data Engineer</b> @ <b>Saturam Infosystems</b></span>
+      </div>
+      <div class="cta-row">
+        <a href="#projects" class="btn btn-primary">View Projects →</a>
+        <a href="#contact" class="btn btn-ghost">Get in Touch</a>
+      </div>
+    </div>
+    <div class="portrait-wrap">
+      <div class="portrait-ring">
+        <div class="img-frame hero-frame" data-label="images/CEG_Profile1.jpeg">
+          <img src="images/CEG_Profile1.jpeg" alt="Adithya Arumugam" onerror="this.style.display='none';this.parentElement.classList.add('is-empty')">
+          <div class="ph">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4.4 3.6-7 8-7s8 2.6 8 7"/></svg>
+            <div class="mono" style="font-size:12px;color:var(--text-dim);">Add your photo</div>
+            <small>images/profile.jpg</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="scroll-cue"><span>SCROLL</span><span class="line"></span></div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow">01 · Explore</div>
+      
+      <h2>Behind the Build</h2>
+      <p>The person behind the code — education, background, and what drives the work.</p>
+    </div>
+    <div class="about-grid">
+      <div class="reveal">
+        <p>Motivated and passionate Computer Science graduate with a strong problem-solving mindset and a solid foundation in programming and software development.</p>
+        <p>Eager to contribute effectively, grow professionally, and excel in a dynamic, high-performance environment — currently gearing up to start as a Data Engineer at Saturam Infosystems.</p>
+        <p>Based in Hyderabad. Outside of code, leads events and workshops for the student community at Anna University.</p>
+        <div class="lang-chips">
+          <span class="chip">English — Proficient</span>
+          <span class="chip">Tamil — Native</span>
+          <span class="chip">Telugu — Fluent</span>
+          <span class="chip">Hindi — Conversational</span>
+          <span class="chip">Kannada — Basic</span>
+        </div>
+      </div>
+      <div class="timeline reveal">
+        <div class="tl-item">
+          <div class="tl-date">SEP 2022 — APR 2026</div>
+          <h4>B.E. Computer Science Engineering</h4>
+          <div class="tl-sub">College of Engineering Guindy, Anna University · CGPA 8.48</div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-date">MAR 2021 — MAY 2022</div>
+          <h4>Higher Secondary Education</h4>
+          <div class="tl-sub">I Class CDR Junior College · 97%</div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-date">NOV 2023 — JUN 2026</div>
+          <h4>Workshop Organizer - CTF</h4>
+          <div class="tl-sub">CEG Tech Forum</div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-date">JUL 2025 — APR 2026</div>
+          <h4>Head of Events - AUSEC</h4>
+          <div class="tl-sub">Anna University Student Entrepreneurship Club</div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-date">AUG 2026 →</div>
+          <h4>Data Engineer</h4>
+          <div class="tl-sub">Saturam Infosystems</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow">02 · Build</div>
+      <h2>Tools of the trade</h2>
+      <p>Languages, frameworks and fundamentals used to shape raw problems into working software.</p>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-card reveal">
+        <div class="icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M8 4L4 12l4 8M16 4l4 8-4 8"/></svg></div>
+        <h4>Languages</h4>
+        <div class="tag-row"><span class="tag">C/C++</span><span class="tag">Python</span><span class="tag">Java</span><span class="tag">PHP</span><span class="tag">JavaScript</span><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">SQL</span></div>
+      </div>
+      <div class="skill-card reveal">
+        <div class="icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><ellipse cx="12" cy="6" rx="8" ry="3"/><path d="M4 6v6c0 1.7 3.6 3 8 3s8-1.3 8-3V6M4 12v6c0 1.7 3.6 3 8 3s8-1.3 8-3v-6"/></svg></div>
+        <h4>Database</h4>
+        <div class="tag-row"><span class="tag">MySQL</span><span class="tag">PostgreSQL</span></div>
+      </div>
+      <div class="skill-card reveal">
+        <div class="icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M8 21h8M12 18v3"/></svg></div>
+        <h4>Frameworks</h4>
+        <div class="tag-row"><span class="tag">Bootstrap</span><span class="tag">Tailwind CSS</span><span class="tag">Flask</span></div>
+      </div>
+      <div class="skill-card reveal">
+        <div class="icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg></div>
+        <h4>Developer Tools</h4>
+        <div class="tag-row"><span class="tag">Git</span><span class="tag">VS Code</span><span class="tag">Colab</span><span class="tag">Eclipse</span></div>
+      </div>
+      <div class="skill-card reveal">
+        <div class="icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg></div>
+        <h4>CS Fundamentals</h4>
+        <div class="tag-row"><span class="tag">DSA</span><span class="tag">OOP</span><span class="tag">OS</span><span class="tag">CN</span><span class="tag">DBMS</span></div>
+      </div>
+      <div class="skill-card reveal">
+        <div class="icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M17 21v-2a4 4 0 00-4-4H7a4 4 0 00-4 4v2M10 11a4 4 0 100-8 4 4 0 000 8zM23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg></div>
+        <h4>Soft Skills</h4>
+        <div class="tag-row"><span class="tag">Adaptability</span><span class="tag">Collaboration</span><span class="tag">Leadership</span><span class="tag">Time Management</span><span class="tag">Team Collaboration</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow">03 · Create</div>
+      <h2>Academic Projects</h2>
+      <p>Shipped builds spanning full-stack apps, deep learning, and real-time AI pipelines.</p>
+    </div>
+
+    <div class="project-card reveal">
+      <div class="p-img"><div class="img-frame" data-label="images/project-summarizer.jpg">
+        <img src="images/meeting.png" alt="AI-Powered Meeting Summarizer" onerror="this.style.display='none';this.parentElement.classList.add('is-empty')">
+        <div class="ph"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M8 12h8M8 16h5M8 8h3"/></svg><div class="mono" style="font-size:12px;color:var(--text-dim);">Project image</div><small>images/project-summarizer.jpg</small></div>
+      </div></div>
+      <div class="p-body">
+        <div class="p-index">01 / Full-Stack · AI</div>
+        <h3>AI-Powered Meeting Summarizer</h3>
+        <div class="p-date">April 2025 · Python · Flask · Whisper · Gemini API · PostgreSQL</div>
+        <ul>
+          <li>Full-stack app for real-time transcription, AI summarization, and action-item extraction.</li>
+          <li>Integrated Whisper and Gemini APIs for accurate transcripts and contextual task insights.</li>
+          <li>Multi-format document processing (PDF, DOCX, PPTX, TXT) with CSV/XLSX/JSON export.</li>
+          <li>Secure auth, user dashboards, and priority/status-based task tracking.</li>
+        </ul>
+        <div class="p-links"><a href="https://github.com/adithya2004b/RealtimeIntelligence.git" target="_blank"   class="gh-link"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.49 0-.24-.01-.87-.01-1.71-2.78.62-3.37-1.37-3.37-1.37-.45-1.18-1.11-1.49-1.11-1.49-.91-.64.07-.63.07-.63 1 .07 1.53 1.06 1.53 1.06.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.37-2.22-.26-4.56-1.14-4.56-5.06 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.31.1-2.72 0 0 .84-.28 2.75 1.05a9.29 9.29 0 015 0c1.91-1.33 2.75-1.05 2.75-1.05.55 1.41.2 2.46.1 2.72.64.72 1.03 1.63 1.03 2.75 0 3.93-2.34 4.79-4.57 5.05.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.6.69.49A10.26 10.26 0 0022 12.25C22 6.58 17.52 2 12 2z"/></svg> GitHub</a></div>
+      </div>
+    </div>
+
+    <div class="project-card reveal">
+      <div class="p-img"><div class="img-frame" data-label="images/project-ecommerce.jpg">
+        <img src="images/ecommerce.png" alt="E-Commerce Shopping System" onerror="this.style.display='none';this.parentElement.classList.add('is-empty')">
+        <div class="ph"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.7 13.4a2 2 0 002 1.6h9.7a2 2 0 002-1.6L23 6H6"/></svg><div class="mono" style="font-size:12px;color:var(--text-dim);">Project image</div><small>images/project-ecommerce.jpg</small></div>
+      </div></div>
+      <div class="p-body">
+        <div class="p-index">02 / Full-Stack · Web</div>
+        <h3>E-Commerce Shopping System</h3>
+        <div class="p-date">December 2024 · HTML · CSS · PHP · MySQL</div>
+        <ul>
+          <li>Web-based shopping platform with login, product browsing, cart, and checkout.</li>
+          <li>Admin panel for managing categories, products, and users.</li>
+          <li>MySQL database storing users, products, orders, and cart details.</li>
+          <li>Responsive UI with PHP handling backend operations.</li>
+        </ul>
+        <div class="p-links"><a href="https://github.com/adithya2004b/ECommerce.git" target="_blank" class="gh-link"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.49 0-.24-.01-.87-.01-1.71-2.78.62-3.37-1.37-3.37-1.37-.45-1.18-1.11-1.49-1.11-1.49-.91-.64.07-.63.07-.63 1 .07 1.53 1.06 1.53 1.06.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.37-2.22-.26-4.56-1.14-4.56-5.06 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.31.1-2.72 0 0 .84-.28 2.75 1.05a9.29 9.29 0 015 0c1.91-1.33 2.75-1.05 2.75-1.05.55 1.41.2 2.46.1 2.72.64.72 1.03 1.63 1.03 2.75 0 3.93-2.34 4.79-4.57 5.05.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.6.69.49A10.26 10.26 0 0022 12.25C22 6.58 17.52 2 12 2z"/></svg> GitHub</a></div>
+      </div>
+    </div>
+
+    <div class="project-card reveal">
+      <div class="p-img"><div class="img-frame" data-label="images/project-colorization.jpg">
+        <img src="images/image_color.png" alt="Image Colorization" onerror="this.style.display='none';this.parentElement.classList.add('is-empty')">
+        <div class="ph"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 3a9 9 0 000 18c1.5 0 2-1 2-2s-.5-1.5-.5-2.5c0-1 .8-1.5 2-1.5h1.5A3 3 0 0020 11.5C20 6.8 16.4 3 12 3z"/></svg><div class="mono" style="font-size:12px;color:var(--text-dim);">Project image</div><small>images/project-colorization.jpg</small></div>
+      </div></div>
+      <div class="p-body">
+        <div class="p-index">03 / Deep Learning</div>
+        <h3>Image Colorization</h3>
+        <div class="p-date">December 2024 · Python · Deep Learning</div>
+        <ul>
+          <li>U-Net (ResNet-18 encoder) model with LAB color-space preprocessing.</li>
+          <li>Custom PyTorch dataloaders for supervised training.</li>
+          <li>Integrated pretrained GAN-based generator weights for realism.</li>
+          <li>Improved color vibrancy and overall output image quality.</li>
+        </ul>
+        <div class="p-links"><a href="https://github.com/adithya2004b/Image-Colorization.git" target="_blank"  class="gh-link"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.49 0-.24-.01-.87-.01-1.71-2.78.62-3.37-1.37-3.37-1.37-.45-1.18-1.11-1.49-1.11-1.49-.91-.64.07-.63.07-.63 1 .07 1.53 1.06 1.53 1.06.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.37-2.22-.26-4.56-1.14-4.56-5.06 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.31.1-2.72 0 0 .84-.28 2.75 1.05a9.29 9.29 0 015 0c1.91-1.33 2.75-1.05 2.75-1.05.55 1.41.2 2.46.1 2.72.64.72 1.03 1.63 1.03 2.75 0 3.93-2.34 4.79-4.57 5.05.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.6.69.49A10.26 10.26 0 0022 12.25C22 6.58 17.52 2 12 2z"/></svg> GitHub</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FREELANCE -->
+<section id="freelance">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow">04 · Deliver</div>
+      <h2>Freelance work</h2>
+      <p>Client work delivered outside of academic and personal projects.</p>
+    </div>
+    <div class="freelance-card reveal">
+      <div class="f-img"><div class="img-frame" data-label="images/freelance-project.jpg">
+        <img src="images/srisakthi.png" alt="Freelance project" onerror="this.style.display='none';this.parentElement.classList.add('is-empty')">
+        <div class="ph"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l2.4 7.4H22l-6 4.4 2.3 7.2-6.3-4.6L5.7 21l2.3-7.2-6-4.4h7.6z"/></svg><div class="mono" style="font-size:12px;color:var(--text-dim);">Freelance image</div><small>images/freelance-project.jpg</small></div>
+      </div></div>
+      <div class="f-body">
+        <h3>Sri Sakthi Nadi Astrology</h3>
+        <p>Built a static, responsive website for Sri Sakthi Nadi Astrology as a freelance project, featuring service information, appointment booking, contact integration, and a mobile-friendly user experience.</p>
+        <div class="p-links"><a href="https://srisakthinadiastrology.com"  target="_blank" rel="noopener noreferrer" class="gh-link" >www.srisakthinadiastrology.com ↗</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LEADERSHIP -->
+<section id="leadership">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow">05 · Lead</div>
+      <h2>Leadership</h2>
+      <p>Coordinating people and events alongside coordinating code.</p>
+    </div>
+    <div class="lead-grid">
+      <div class="lead-card reveal">
+        <div class="l-img"><div class="img-frame" data-label="images/leadership-events.jpg">
+          <img src="images/ausec.jpeg" alt="Head of Events" onerror="this.style.display='none';this.parentElement.classList.add('is-empty')">
+          <div class="ph"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 00-4-4H7a4 4 0 00-4 4v2M10 11a4 4 0 100-8 4 4 0 000 8z"/></svg><small>images/leadership-events.jpg</small></div>
+        </div></div>
+        <div class="l-body">
+          <div class="l-org">AUSEC · Jul 2025 – Apr 2026</div>
+          <h4>Head of Events</h4>
+          <p>Anna University Student Entrepreneurship Club — led multiple workshops and events, handling host coordination and end-to-end execution.</p>
+        </div>
+      </div>
+      <div class="lead-card reveal">
+        <div class="l-img"><div class="img-frame" data-label="images/leadership-workshop.jpg">
+          <img src="images/ctf.jpeg" alt="Workshop Organizer" onerror="this.style.display='none';this.parentElement.classList.add('is-empty')">
+          <div class="ph"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M8 21h8M12 18v3"/></svg><small>images/leadership-workshop.jpg</small></div>
+        </div></div>
+        <div class="l-body">
+          <div class="l-org">CEG Tech Forum · Nov 2023 – Jun 2025</div>
+          <h4>Workshop Organizer</h4>
+          <p>Organized technical workshops, managing logistics, promotions, and participant engagement.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact-section">
+  <div class="wrap">
+    <div class="contact-panel reveal">
+      <div class="eyebrow" style="justify-content:center;">06 · Connect</div>
+      <h2>Let's build something.</h2>
+      <p>Open to Data Engineering opportunities, collaborations, and interesting problems. Reach out below.</p>
+      <div class="contact-links">
+        <a href="mailto:adithya2004b@gmail.com" class="btn btn-primary">Email Me</a>
+        <a href="tel:+917893410746" class="btn btn-ghost">+91 7893410746</a>
+        <a href="https://www.linkedin.com/in/adithya-arumugam3572" class="btn btn-ghost" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://github.com/adithya2004b" class="btn btn-ghost" target="_blank" rel="noopener noreferrer">GitHub</a>
+         <a href="images/Resume-Adithya.pdf" class="btn btn-ghost" download>Download Resume</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  Built by <span>Adithya Arumugam</span> · Hyderabad, India · <span id="year"></span>
+</footer>
+
+<script src="script.js"></script>
+</body>
+
+</html>
