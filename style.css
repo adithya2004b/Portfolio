@@ -328,22 +328,19 @@ img{max-width:100%;display:block;}
 }
 .portrait-ring::before{
   content:'';position:absolute;inset:-14px;border-radius:32px;
-  background:conic-gradient(from 0deg,var(--cyan),var(--violet),var(--amber),var(--cyan));
+    background: var(--cyan);
   animation:spin 8s linear infinite;filter:blur(1px);
 }
 .portrait-ring::after{
   content:'';position:absolute;inset:-14px;border-radius:32px;
-  background:conic-gradient(from 0deg,var(--cyan),var(--violet),var(--amber),var(--cyan));
+    background: var(--cyan);
   animation:spin 8s linear infinite;filter:blur(28px);opacity:.55;
 }
 
 @keyframes spin{to{transform:rotate(360deg);}}
 .img-frame{
   position:relative;width:320px;height:320px;border-radius:24px;overflow:hidden;
-  background:
-    radial-gradient(circle at 30% 20%, var(--cyan-soft), transparent 55%),
-    radial-gradient(circle at 80% 80%, var(--violet-soft), transparent 55%),
-    var(--surface);
+  background: var(--cyan);
   border:1px solid var(--line);z-index:1;
   display:flex;align-items:center;justify-content:center;text-align:center;
 }
@@ -397,8 +394,8 @@ img{max-width:100%;display:block;}
   }
 
   .portrait-ring {
-    width: 210px;
-    height: 210px;
+    width: 180px;
+    height: 180px;
   }
 
   .portrait-ring::before,
@@ -414,8 +411,8 @@ img{max-width:100%;display:block;}
 
   .img-frame,
   .img-frame.hero-frame {
-    width: 210px;
-    height: 210px;
+    width: 180px;
+    height: 180px;
     border-radius: 18px;
   }
 
