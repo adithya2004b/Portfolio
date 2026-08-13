@@ -399,18 +399,28 @@ img{max-width:100%;display:block;}
     background: var(--cyan);
   }
 
-  .portrait-ring::before,
+  /* .portrait-ring::before,
   .portrait-ring::after {
     inset: -9px;
     border-radius: 24px;
     background: var(--cyan);
+  } */
+
+   .portrait-ring::before {
+    inset: -9px;
+    border-radius: 24px;
+    background: var(--cyan);
+    filter: blur(1px);
   }
 
   .portrait-ring::after {
-    filter: blur(18px);
-    opacity: .4;
+    inset: -9px;
+    border-radius: 24px;
     background: var(--cyan);
+    filter: blur(18px);
+    opacity: .45;
   }
+  
 
   .img-frame,
   .img-frame.hero-frame {
@@ -486,7 +496,7 @@ img{max-width:100%;display:block;}
 
   /* Scroll indicator */
   .scroll-cue {
-    bottom: 10px;
+    bottom: 20px;
     font-size: 9px;
   }
 
